@@ -14,6 +14,7 @@ service-account*.json
 
 # Local Claude Code settings (personal, machine-specific)
 .claude/settings.local.json
+CLAUDE.md
 
 # Large / regenerable data — excluded by default
 data/raw/

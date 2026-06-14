@@ -1,0 +1,8 @@
+# ASM Media Sentiment — Phase 2 dashboard (Streamlit Cloud)
+# Runtime deps for app.py only. For the BigQuery extraction + Claude
+# classification pipeline, see requirements-pipeline.txt.
+pandas>=2.1
+pyarrow>=14.0
+requests>=2.31
+streamlit>=1.36
+plotly>=5.20

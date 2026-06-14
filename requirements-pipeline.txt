@@ -1,0 +1,14 @@
+# ASM Media Sentiment — Phase 2 data + classification pipeline.
+# Install on top of the dashboard deps:  pip install -r requirements.txt -r requirements-pipeline.txt
+# (the dashboard itself does not need any of these.)
+
+# BigQuery extraction
+google-cloud-bigquery>=3.20
+google-cloud-bigquery-storage>=2.24
+db-dtypes>=1.2
+
+# Article text fetching
+trafilatura>=1.8
+
+# Claude classification
+anthropic>=0.40

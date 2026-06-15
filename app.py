@@ -336,7 +336,8 @@ with tab_framing:
                    "secondary). 'gender' appears only as a secondary framing.")
         sec = v[["country", "framing"]].copy()
         sec["secondary"] = v["secondary_framings"].map(framing_analysis._as_list)
-        sec_long = sec.explode("secondary").dropna(subset=["secondary"])
+        sec_long = (sec.explode("secondary").dropna(subset=["secondary"])
+                    .reset_index(drop=True))
 
         prim_ct = v.groupby("framing").size().rename("count").reset_index()
         prim_ct["role"] = "primary"
